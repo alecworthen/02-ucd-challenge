@@ -1,0 +1,133 @@
+:root {
+    --background: #333; 
+    --bg-text: #6D6D64;
+    --underline: #b3cee5;
+    --text1: #ffffff;
+    --text2: #ffffff;
+}
+body, h1, h2, h3, p {
+    margin: 0px;
+    padding: 10px;
+    background-color: var(--background);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text1);
+    
+}
+
+header {
+    background-color: var(--underline);
+    color: var(--text1);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text1);
+    font-weight: bold;
+
+}
+
+section {
+    padding: 2rem;
+}
+
+
+#portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--underline);
+}
+
+.portfolio-item {
+    flex-basis: calc(33.33% - 20px); 
+    margin-bottom: 20px;
+    background-color: var(--underline);
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 0.5rem 0;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    #portfolio {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-item {
+        flex-basis: 100%;
+    }
+}
+#contact {
+    padding: 2rem;
+    background-color:var(--background)
+}
+
+#contact h2 {
+    font-size: 1.5rem;
+}
+
+#contact p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contact-form label {
+    margin-bottom: 0.5rem;
+}
+
+#contact-form input, #contact-form text {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--text1);
+    border-radius: 4px;
+}
+
+#contact-form button {
+    background-color: var(--underline);
+    color: var(--text1);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #005b9f;
+}
